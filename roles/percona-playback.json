@@ -1,0 +1,19 @@
+{
+    "name": "percona-playback",
+    "json_class": "Chef::Role",
+    "description": "percona-playback default cookbooks",
+    "default_attributes": {
+		"packages": [
+			"percona-playback",
+			"percona-playback-debuginfo",
+			"percona-playback-devel"
+		]
+    },
+    "run_list": [
+		"recipe[yum-epel]",
+        "recipe[yum-percona]",
+        "recipe[packages]"
+    ],
+    "chef_type": "role" 
+}
+

@@ -1,0 +1,20 @@
+{
+    "name": "db",
+    "json_class": "Chef::Role",
+    "description": "db role cookbooks",
+    "default_attributes": {
+      "mysql": {
+        "version": "5.6",
+        "tunable": {
+          "skip-name-resolve": true,
+          "character-set-server": "utf8"
+        }
+      }
+    },
+    "run_list": [
+        "recipe[yum-mysql-community::mysql56]",
+        "recipe[mysql::server]"
+    ],
+    "chef_type": "role"
+}
+

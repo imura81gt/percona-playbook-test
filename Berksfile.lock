@@ -1,0 +1,18 @@
+DEPENDENCIES
+  mysql (~> 5.5.4)
+  packages (~> 0.4.0)
+  yum-epel (~> 0.5.1)
+  yum-mysql-community (~> 0.1.10)
+  yum-percona (~> 0.2.0)
+
+GRAPH
+  mysql (5.5.4)
+    yum-mysql-community (>= 0.0.0)
+  packages (0.4.0)
+  yum (3.4.1)
+  yum-epel (0.5.2)
+    yum (~> 3.0)
+  yum-mysql-community (0.1.10)
+    yum (>= 3.0)
+  yum-percona (0.2.0)
+    yum (~> 3.0)
